@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <script>
+        function display(){
+            document.getElementById("myusername").innerHTML = document.getElementById("username").value + "'s Gallery";
+        }
+
+        function setImage(){
+            document.getElementById("profileImage").style.backgroundImage = "url(" + document.getElementById("image_url").value + ")";
+        }
+       
+    </script>
+</head>
+<body>
+    <div class="content">
+        <div class="flex-top">
+            <div class="flex-item-1">
+                <div class="profile-div" id="profileImage"></div>
+                <div class="noti"><p>2</p></div>
+            </div>
+            <div>
+                <a href="profile.html" class="on-hover">
+                    <p id="myusername">User Name, Gallery</p>
+                </a>
+            </div>
+            <div class="flex-item-2">
+                <div><label>Username</label><input type="text" style="margin: 5px;" id="username"><button onclick="display()">set</button></div>
+                <div><label>Image URL</label><input type="text" style="margin: 5px;" id="image_url"><button onclick="setImage()">set</button></div>
+            </div>
+        </div>
+        <div class="gallery">
+            <div class="gallery-item" style="grid-column: span 2 / span 2; background-image: url(https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/60/66/c7/imazu-white-snakes-museum.jpg?w=1200&h=1200&s=1);"></div>
+            <div class="gallery-item" style="background-image: url(https://gifts.worldwildlife.org/gift-center/Images/large-species-photo/large-Red-Panda-photo.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(https://wwfint.awsassets.panda.org/img/original/__iucn_osg_jpeg_1.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(https://www.sarakadee.com/blog/oneton/wp-content/uploads/2017/12/cat-cute-e1533862828469.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(https://img.kapook.com/u/2017/Jarosphan/Pet/Chinchillas/ch05.jpg);"></div>
+            <div class="gallery-item" style="grid-row: span 2 / span 2; background-image: url(https://gdb.voanews.com/89F2116C-D60B-4ADA-A445-7F362860ED85_w1200_r1.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(https://png.pngtree.com/thumb_back/fw800/background/20230610/pngtree-rodent-rat-in-woodland-uttoxeter-image_2893116.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(https://cdn.i-scmp.com/sites/default/files/d8/images/methode/2021/10/28/b99f985c-37b9-11ec-bf9d-b73b258185bb_972x_201134.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(https://reporter-api.anu.edu.au/app/uploads/2022/11/Untitled-design-2.jpg);"></div>
+            <div class="gallery-item" style="background-image: url(https://cdn.mos.cms.futurecdn.net/qAzNicL8L95ZZRm9ybLvHQ-1200-80.jpg);"></div>
+        </div>
+    </div>
+</body>
+</html>
